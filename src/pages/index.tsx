@@ -1,10 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { signIn, useSession } from 'next-auth/react';
+
 import { SignInButton } from '../components/Buttons'
+
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+  const {data: session} = useSession();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,10 +18,17 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <img src='/nubanklogo.svg' alt='nubank'/>
-        <SignInButton />
-      </main>
+      {session ? (
+        <main className={styles.main}>
+          <h3>Bem-vindo {session.user?.name}</h3>
+        </main>
+      ) : (
+        <main className={styles.main}>
+          {session }
+          <img src='/nubanklogo.svg' alt='nubank'/>
+          <SignInButton onClick={() => signIn('github')} />
+        </main>
+      )}
     </div>
   )
 }
