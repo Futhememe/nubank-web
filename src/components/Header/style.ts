@@ -8,7 +8,7 @@ export const Container = styled.header`
   justify-content: space-between;
   
   width: 100%;
-  padding: 22px 48px;
+  padding: 16px 48px;
 
   background-color: ${theme.background};
 
