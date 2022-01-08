@@ -1,13 +1,13 @@
-import { useSession } from "next-auth/react";
+import { AccountSession } from "../../components/AccountSession";
 import { Header } from "../../components/Header";
 import { Container } from "./style"
 
 export const Dashboard = () => {
-  const {data: session} = useSession();
 
   return(
     <Container>
       <Header />
+      <AccountSession />
     </Container>
   )
 }
