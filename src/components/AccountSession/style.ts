@@ -70,4 +70,8 @@ export const AnnounceCard = styled.div`
   span {
     color: ${theme.primary}
   }
+
+  @media(max-width: 720px) {
+    display: none;
+  }
 `;
