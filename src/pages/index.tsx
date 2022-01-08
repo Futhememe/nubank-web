@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import { signIn, useSession } from 'next-auth/react';
 
 import { SignInButton } from '../components/Buttons'
 
 import styles from '../styles/Home.module.css'
+import { Dashboard } from '../screens/Dashboard';
 
 const Home: NextPage = () => {
   const {data: session} = useSession();
@@ -19,9 +19,7 @@ const Home: NextPage = () => {
       </Head>
 
       {session ? (
-        <main className={styles.main}>
-          <h3>Bem-vindo {session.user?.name}</h3>
-        </main>
+        <Dashboard />
       ) : (
         <main className={styles.main}>
           {session }
