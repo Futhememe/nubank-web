@@ -14,3 +14,16 @@ export const SignInButton = ({...rest}: HTMLMotionProps<'button'>) => {
     </ButtonContainer>
   )
 }
+
+export const SignOutButton = ({...rest}: HTMLMotionProps<'button'>) => {
+  return (
+    <ButtonContainer
+      type='button'
+      whileHover={{ y: -2 }}
+      whileTap={{ y: 2 }}
+      {...rest}
+    >
+      Desconectar
+    </ButtonContainer>
+  )
+}
