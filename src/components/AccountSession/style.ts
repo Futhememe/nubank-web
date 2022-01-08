@@ -10,6 +10,10 @@ export const Container = styled.div`
   padding: 24px 48px;
 
   background-color: ${theme.primary};
+
+  @media(max-width: 720px) {
+    padding: 24px;
+  }
 `;
 
 export const UserInformationContainer = styled.div`
