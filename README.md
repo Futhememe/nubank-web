@@ -14,6 +14,8 @@
   <img alt="Moveit" src=".github/nubanklogo.svg">
 </p>
 
+You can run the demo on [Nubank web](https://nubank-web-fuh.vercel.app/)
+
 ## Test on your machine
 
 First, install the dependecies:
