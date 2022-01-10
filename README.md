@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
@@ -14,7 +14,8 @@
   <img alt="Moveit" src=".github/nubanklogo.svg">
 </p>
 
-You can run the demo on [Nubank web](https://nubank-web-fuh.vercel.app/)
+
+### You can run the demo on [Nubank web](https://nubank-web-fuh.vercel.app/)
 
 ## Test on your machine
 
