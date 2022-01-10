@@ -10,6 +10,7 @@
  ​<p align="center"> 
  ​  <img alt="Moveit" src=".github/logo-full.svg" width="120px"> 
  ​</p>
+ 
  ​##​ ​Test in your machine
   
  ​First. Install the dependecies: 
@@ -18,7 +19,6 @@
  ​npm install 
  ​#​ or
  ​yarn 
-  
  ​``` 
   
  ​Second. Run the command line: 
