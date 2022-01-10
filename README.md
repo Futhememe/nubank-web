@@ -11,7 +11,7 @@
  ​  <img alt="Moveit" src=".github/logo-full.svg" width="120px"> 
  ​</p>
 
- ​##​ ​Test in your machine
+ ​##​ Test in your machine
   
  ​First. Install the dependecies: 
   
@@ -31,9 +31,9 @@
   
  ​Open [​http://localhost:3000​](http://localhost:3000) with your browser to see the result. 
   
- ​##​ ​🚀 Technologies
+ ##🚀 Technologies
   
- ​Technologies used in this project: 
+ Technologies used in this project: 
   
  - [Next.js](https://nextjs.org/) 
  - [React](https://reactjs.org) 
@@ -41,9 +41,9 @@
  - [NextAuth](https://next-auth.js.org/) 
  - [React Beautiful DnD](https://github.com/atlassian/react-beautiful-dnd)
   
- ​##​ ​💻 Project 
+ ##💻 Project 
   
- ​Nubank web is a study project to see how would be the nubank mobile experience um web
+ Nubank web is a study project to see how would be the nubank mobile experience um web
 
  It's a project made to study OAuth authentication and drag n drop
   
