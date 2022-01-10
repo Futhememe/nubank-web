@@ -10,7 +10,7 @@
  ​<p align="center"> 
  ​  <img alt="Moveit" src=".github/logo-full.svg" width="120px"> 
  ​</p>
- 
+
  ​##​ ​Test in your machine
   
  ​First. Install the dependecies: 
@@ -35,9 +35,9 @@
   
  ​Technologies used in this project: 
   
- ​-​ [​Next.js​](https://nextjs.org/) 
- ​-​ [​React​](https://reactjs.org) 
- ​-​ [​TypeScript​](https://www.typescriptlang.org/)
+ - [Next.js](https://nextjs.org/) 
+ - [React](https://reactjs.org) 
+ - [TypeScript](https://www.typescriptlang.org/)
  - [NextAuth](https://next-auth.js.org/) 
  - [React Beautiful DnD](https://github.com/atlassian/react-beautiful-dnd)
   
