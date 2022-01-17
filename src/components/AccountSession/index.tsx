@@ -1,8 +1,17 @@
 import { useSession } from "next-auth/react"
-import { AnnounceCard, Container, UserInformationContainer } from "./style"
+import React from "react";
+import { IconButton } from "../Buttons";
+import { AnnounceCard, Container, UserInformationContainer, WageSkeleton } from "./style";
+
+const wageVariants = {
+  open: { width: '100%', opacity: [0, 1, 1] },
+  closed: { width: 0, opacity: [1, 0, 0] },
+}
 
 export const AccountSession = () => {
   const {data: session} = useSession();  
+
+  const [isWageVisible, setIsWageVisible] = React.useState<boolean>(true);
 
   return(
     <Container>
@@ -10,8 +19,18 @@ export const AccountSession = () => {
         <h3>Olá, {session?.user?.name}</h3>
         <div>
           <h3>Conta</h3>
-          <img src='/eye.svg' alt='show' />
+          <IconButton onClick={() => setIsWageVisible(!isWageVisible)}>
+            {isWageVisible ? (
+              <img src='/eye-slash.svg' alt='cover' />
+            ) : (
+              <img src='/eye.svg' alt='show' />
+            )}
+          </IconButton>
         </div>
+        <WageSkeleton 
+          animate={isWageVisible ? 'closed' : 'open'}
+          variants={wageVariants}
+        />
         <h1>R$ 1.000,07</h1>
       </UserInformationContainer>
 

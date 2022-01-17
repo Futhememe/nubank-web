@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { theme } from '../../styles/theme';
 
 export const Container = styled.div`
@@ -19,6 +20,7 @@ export const Container = styled.div`
 export const UserInformationContainer = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
 
   h3 {
     font-size: 0.875rem;
@@ -72,10 +74,22 @@ export const AnnounceCard = styled.div`
   }
 
   span {
-    color: ${theme.primary}
+    color: ${theme.primary};
+    cursor: pointer;
   }
 
   @media(max-width: 720px) {
     display: none;
   }
+`;
+
+export const WageSkeleton = styled(motion.span)`
+  height: 1.25rem;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+  border-radius: 2px;
+
+  background-color: ${theme.purpleGray};
 `;
