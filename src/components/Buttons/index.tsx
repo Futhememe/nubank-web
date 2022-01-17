@@ -1,5 +1,5 @@
 import { HTMLMotionProps, motion } from 'framer-motion';
-import { ButtonContainer } from './style';
+import { ButtonContainer, IconButtonContainer } from './style';
 
 export const SignInButton = ({...rest}: HTMLMotionProps<'button'>) => {
   return(
@@ -25,5 +25,18 @@ export const SignOutButton = ({...rest}: HTMLMotionProps<'button'>) => {
     >
       Desconectar
     </ButtonContainer>
+  )
+}
+
+export const IconButton = ({children, ...rest}: HTMLMotionProps<'button'>) => {
+  return (
+    <IconButtonContainer
+      type='button'
+      whileHover={{ y: -2 }}
+      whileTap={{ y: 2 }}
+      {...rest}
+    >
+      {children}
+    </IconButtonContainer>
   )
 }

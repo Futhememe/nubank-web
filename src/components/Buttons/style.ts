@@ -19,3 +19,14 @@ export const ButtonContainer = styled(motion.button)`
      margin-right: 10px;
   }
 `;
+
+export const IconButtonContainer = styled(motion.button)`
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  background: transparent;
+`;
