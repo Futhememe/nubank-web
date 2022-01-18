@@ -52,8 +52,8 @@ export const CreditCard = () => {
       </CreditContent>
 
       <BarContainer>
-        <Bar color={theme.green} porcentage={90}/>
-        <Bar color={theme.blue} porcentage={80}/>
+        <Bar color={theme.blue} porcentage={90}/>
+        <Bar color={theme.green} porcentage={80}/>
       </BarContainer>
     </BasicContainer>
   )
