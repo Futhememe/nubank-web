@@ -6,6 +6,8 @@ export const ShortcutContainer = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+
 
   flex-direction: column;
 
