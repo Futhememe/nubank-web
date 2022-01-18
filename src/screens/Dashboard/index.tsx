@@ -1,8 +1,9 @@
 import { AccountSession } from "../../components/AccountSession";
+import { CreditCard } from "../../components/Cards";
 import { Header } from "../../components/Header";
 import { Menu } from "../../components/Menu";
 import { ShortcutsSession } from "../../components/ShortcutsSession";
-import { Container, Funcionalitys } from "./style"
+import { Container, Funcionalitys, Grid } from "./style"
 
 export const Dashboard = () => {
 
@@ -13,6 +14,9 @@ export const Dashboard = () => {
       <ShortcutsSession />
       <Funcionalitys>
         <Menu />
+        <Grid>
+          <CreditCard />
+        </Grid>
       </Funcionalitys>
     </Container>
   )
