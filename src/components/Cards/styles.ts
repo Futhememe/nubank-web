@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { theme } from '../../styles/theme';
-import { DotStyleProps } from './types';
+import { BarStyleProps, DotStyleProps } from './types';
 
 export const ShortcutContainer = styled(motion.div)`
   display: flex;
@@ -124,5 +124,27 @@ export const Dot = styled.span<DotStyleProps>`
   border-radius: 6px;
 
   background-color: ${(props) => props.color};
+`;
+
+export const BarContainer = styled.div`
+  display: flex;
+  position: relative;
+
+  height: 7px;
+  width: 100%;
+
+  background-color: ${theme.orange};
+  border-radius: 7px;
+
+  overflow: hidden;
+`;
+
+export const Bar = styled(motion.div)<BarStyleProps>`
+  display: flex;
+  height: 7px;
+  position: absolute;
+
+  background-color: ${(props) => props.color};
+  width: ${(props) => props.porcentage}%;
 `;
 

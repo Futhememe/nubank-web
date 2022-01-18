@@ -1,5 +1,5 @@
 import { theme } from "../../styles/theme"
-import { BasicContainer, Box, CreditContent, CreditHeader, Dot, ShortcutContainer } from "./styles"
+import { Bar, BarContainer, BasicContainer, Box, CreditContent, CreditHeader, Dot, ShortcutContainer } from "./styles"
 import { ShortcutCardProps } from "./types"
 
 export const ShortcutCard = ({ title, icon }: ShortcutCardProps) => {
@@ -50,6 +50,11 @@ export const CreditCard = () => {
           </div>
         </Box>
       </CreditContent>
+
+      <BarContainer>
+        <Bar color={theme.green} porcentage={90}/>
+        <Bar color={theme.blue} porcentage={80}/>
+      </BarContainer>
     </BasicContainer>
   )
 }

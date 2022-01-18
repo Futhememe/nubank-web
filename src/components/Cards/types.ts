@@ -8,3 +8,8 @@ export interface ShortcutCardProps {
 export interface DotStyleProps {
   color?: string;
 }
+
+export interface BarStyleProps {
+  color?: string;
+  porcentage?: number;
+}
