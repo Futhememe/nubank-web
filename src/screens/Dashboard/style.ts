@@ -9,3 +9,8 @@ export const Container = styled.div`
   /* justify-content: center; */
   /* align-items: center; */
 `;
+
+export const Funcionalitys = styled.div`
+  display: flex;
+  padding: 0 48px 2rem;
+`;
