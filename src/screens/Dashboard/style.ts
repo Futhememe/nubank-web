@@ -13,6 +13,10 @@ export const Container = styled.div`
 export const Funcionalitys = styled.div`
   display: flex;
   padding: 0 48px 2rem;
+
+  @media(max-width: 720px) {
+    padding: 1rem 0;
+  }
 `;
 
 export const Grid = styled.div`
@@ -25,4 +29,12 @@ export const Grid = styled.div`
 
   width: 100%;
   height: 100%;
+
+  @media(max-width: 720px) {
+    margin: 0;  
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+
+    padding: 0 1rem;
+  }
 `;

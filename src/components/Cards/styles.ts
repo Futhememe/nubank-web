@@ -98,6 +98,18 @@ export const CreditContent = styled(motion.div)`
   justify-content: space-between;
 
   margin: 24px 0;
+
+  @media(max-width: 720px) {
+    flex-direction: column;
+
+    & > div {
+      margin-top: 1rem;
+    }
+
+    & > div:first-child {
+      margin: 0;
+    }
+  } 
 `;
 
 export const Box = styled(motion.div)`
@@ -109,6 +121,7 @@ export const Box = styled(motion.div)`
   }
 
   div {
+
     p {
       font-weight: 500;
       font-size: 0.875rem;
