@@ -39,19 +39,49 @@ const options = [
     title: 'Doação',
     icon: <img src='/money.svg' />
   },
-]
+];
+
+interface ShortcutDTO {
+  index: number;
+  title: string;
+  icon: any;
+}
 
 export const ShortcutsSession = () => {
+  const [shortcuts, setShortcuts] = React.useState<ShortcutDTO[]>(options);
+
+  const reorder = (list: any, startIndex: any, endIndex: any) => {
+    const result = Array.from(list);
+    const [removed] = result.splice(startIndex, 1);
+    result.splice(endIndex, 0, removed);
+  
+    return result;
+  };
+
+  function onDragEnd(result: any) {
+    if (!result.destination) {
+      return;
+    }
+
+    const items: any = reorder(
+      shortcuts,
+      result.source.index,
+      result.destination.index
+    );
+
+    setShortcuts(items);
+  }
+
   return(
     <div>
-      <DragDropContext onDragEnd={() => {}}>
+      <DragDropContext onDragEnd={onDragEnd}>
         <Droppable droppableId="shortcut" direction="horizontal">
           {(provided, snapshot) => (
             <Container
               {...provided.droppableProps}
               ref={provided.innerRef}
             >
-              {options.map(option => (
+              {shortcuts.map(option => (
                 <Draggable
                   key={option.index}
                   draggableId={String(option.index)}
